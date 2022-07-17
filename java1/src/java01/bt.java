@@ -3,48 +3,38 @@ import java.util.Scanner;
 public class bt {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int m;
-		System.out.println("Nhap thang sinh: ");
+		int d,m;
+		System.out.println("Nhap ngay thang sinh: ");
+		d = scanner.nextInt();
 		m = scanner.nextInt();
-		switch(m) {
-		case 1:
-			System.out.println("Cung hoang dao cua bn la Ma Ket");
-			break;
-		case 2:
-			System.out.println("Cung hoang dao cua bn la Bao Binh");
-			break;
-		case 3:
-			System.out.println("Cung hoang dao cua bn la Song Ngu");
-			break;
-		case 4:
-			System.out.println("Cung hoang dao cua bn la Bach Duong");
-			break;
-		case 5:
-			System.out.println("Cung hoang dao cua bn la Kim Nguu");
-			break;
-		case 6:
-			System.out.println("Cung hoang dao cua bn la Song Tu");
-			break;
-		case 7:
-			System.out.println("Cung hoang dao cua bn la Cu Giai");
-			break;
-		case 8:
-			System.out.println("Cung hoang dao cua bn la Su Tu");
-			break;
-		case 9:
-			System.out.println("Cung hoang dao cua bn la Xu Nu");
-			break;
-		case 10:
-			System.out.println("Cung hoang dao cua bn la Thien Binh");
-			break;
-		case 11:
-			System.out.println("Cung hoang dao cua bn la Bo Cap");
-			break;
-		case 12:
-			System.out.println("Cung hoang dao cua bn la Nhan Ma");
-			break;
-		default:
-			System.out.println("Thang ban nhap sai");
+		if(d > 0 && d <31 && m > 0 && m <=12)
+		{
+			if(d >= 20 && m==1 || d <=18 && m ==2)
+				System.out.println("Cung hoang dao cua bn la Bao Binh");
+			else if(d >= 19 && m==2 || d <=20 && m ==3)
+				System.out.println("Cung hoang dao cua bn la Song Ngu");
+			else if(d >= 21 && m==3 || d <=20 && m ==4)
+				System.out.println("Cung hoang dao cua bn la Bach Duong");
+			else if(d >= 21 && m==4 || d <=20 && m ==5)
+				System.out.println("Cung hoang dao cua bn la Kim Nguu");
+			else if(d >= 21 && m==5 || d <=21 && m ==6)
+				System.out.println("Cung hoang dao cua bn la Song Tu");
+			else if(d >= 22 && m==6 || d <=22 && m ==7)
+				System.out.println("Cung hoang dao cua bn la Cu Giai");
+			else if(d >= 23 && m==7 || d <=22 && m ==8)
+				System.out.println("Cung hoang dao cua bn la Su Tu");
+			else if(d >= 23 && m==8 || d <=22 && m ==9)
+				System.out.println("Cung hoang dao cua bn la Xu Nu");
+			else if(d >= 23 && m==9 || d <=23 && m ==10)
+				System.out.println("Cung hoang dao cua bn la Thien Binh");
+			else if(d >= 24 && m==10 || d <=22 && m ==11)
+				System.out.println("Cung hoang dao cua bn la Bo Cap");
+			else if(d >= 23 && m==11 || d <=21 && m ==12)
+				System.out.println("Cung hoang dao cua bn la Nhan Ma");
+			else if(d >= 22 && m==12 || d <=19 && m ==1)
+				System.out.println("Cung hoang dao cua bn la Ma Ket");
 		}
+		else
+			System.out.println("Ngay Thang ban nhap sai");
 	}
 }
