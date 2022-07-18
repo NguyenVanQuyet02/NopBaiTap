@@ -7,11 +7,11 @@ public class bt {
 		System.out.println("Nhap ngay thang sinh: ");
 		d = scanner.nextInt();
 		m = scanner.nextInt();
-		if(d > 0 && d <31 && m > 0 && m <=12)
+		if(d > 0 && d <=31 && m > 0 && m <=12)
 		{
 			if(d >= 20 && m==1 || d <=18 && m ==2)
 				System.out.println("Cung hoang dao cua bn la Bao Binh");
-			else if(d >= 19 && m==2 || d <=20 && m ==3)
+			else if(d >= 19 && d <=28 && m==2 || d <=20 && m ==3)
 				System.out.println("Cung hoang dao cua bn la Song Ngu");
 			else if(d >= 21 && m==3 || d <=20 && m ==4)
 				System.out.println("Cung hoang dao cua bn la Bach Duong");
@@ -33,6 +33,8 @@ public class bt {
 				System.out.println("Cung hoang dao cua bn la Nhan Ma");
 			else if(d >= 22 && m==12 || d <=19 && m ==1)
 				System.out.println("Cung hoang dao cua bn la Ma Ket");
+			else
+				System.out.println("Ngay Thang ban nhap sai");
 		}
 		else
 			System.out.println("Ngay Thang ban nhap sai");
